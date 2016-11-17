@@ -7,7 +7,7 @@ Once the downloads complete, you will get email alert.
 1. To save power, low power devices are recommended, like Raspberry PI.
 1. Install Python3
 1. Register account on www.zimuzu.tv
-1. Install Transmission on your lan PC, which can be accessed through web
+1. Install Transmission on your LAN device(or SSH reverse connected ones in other LAN), which can be accessed through web(like 192.168.1.2:9091)
 
 ## Install
 #### Install BeautifulSoup
