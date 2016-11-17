@@ -33,10 +33,8 @@ INSERT INTO tv(id, name, url, start_season, start_episode, site) VALUES(NULL,'Z 
 
 #### Add Cron schedule for Linux, execute `crontab -e` (Windows should add schedule task)
 ```
-*/20 8-23 * * * /root/autodownloadjob/schedule.download.py
-*/20 18-23 * * 1-5 /root/autodownloadjob/schedule.mail.py
-*/20 12-13 * * 1-5 /root/autodownloadjob/schedule.mail.py
-*/20 8-23 * * 6-7 /root/autodownloadjob/schedule.mail.py
+1,21,41 8-23 * * * /root/autodownloadjob/schedule.download.py
+6,26,46 8-23 * * * /root/autodownloadjob/schedule.mail.py
 ```
 
 ## Common tools
