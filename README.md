@@ -1,5 +1,10 @@
 # Instruction (Ubuntu)
+## Brief intro
+With this script, My Raspberry PI3 checks new episodes from Zimuzu(login), and start download with Transmission. 
+Once the downloads complete, you will get email alert.
+
 ## Prepare
+1. To save power, low power devices are recommended, like Raspberry PI.
 1. Install Python3
 1. Register account on www.zimuzu.tv
 1. Install Transmission on your lan PC, which can be accessed through web
