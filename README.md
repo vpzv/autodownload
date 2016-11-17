@@ -1,7 +1,8 @@
 # Instruction (Ubuntu)
 ## Prepare
+1. Install Python3
 1. Register account on www.zimuzu.tv
-2. Install Transmission on your lan PC, which can be accessed through web
+1. Install Transmission on your lan PC, which can be accessed through web
 
 ## Install
 #### Install BeautifulSoup
