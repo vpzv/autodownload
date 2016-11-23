@@ -3,8 +3,8 @@ import sys, os, re
 import dao, constants, zimuzu, boxdownload
 from requests import Request, Session
 
-sys.stdout = open("/root/autodownloadjob/schedule.download.log", "w")
-
+sys.stdout = open("/root/autodownloadjob/schedule.download.log", encoding='utf-8', mode='w')
+sys.stderr = open("/root/autodownloadjob/schedule.download.error.log", encoding='utf-8', mode='w')
 
 def download_for_zimuzu(tv):
 	print('[%s] from S%sE%s' % (tv['name'], tv['start_season'], tv['start_episode']))
@@ -31,7 +31,7 @@ def main():
 	if not os.path.isfile(constants.sqlite_file):
 		dao.create_db()
 	else:
-		print('Using database: %s' % constants.sqlite_file) 
+		print('Using database: %s' % constants.sqlite_file)
 
 	tv_list = dao.list_tv()
 	if not tv_list:

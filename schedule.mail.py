@@ -2,7 +2,8 @@
 import sys
 import dao, boxdownload, mail, constants
 
-sys.stdout = open("/root/autodownloadjob/schedule.mail.log", "w")
+sys.stdout = open("/root/autodownloadjob/schedule.mail.log", encoding='utf-8', mode='w')
+sys.stderr = open("/root/autodownloadjob/schedule.mail.error.log", encoding='utf-8', mode='w')
 
 def check_if_download_complete(all_downloading, series_title):
 	for download in all_downloading:
@@ -37,5 +38,6 @@ def main():
 				dao.update_series_status(series['id'], constants.DOWLOADED_FLAG)
 	else:
 		print('Skip mail, since no completed series is found.')
+
 
 main()
